@@ -9,12 +9,12 @@ export const Counter = () => {
     return (
         <section data-testid="counter" className="component">
             <Button
-                data-testid="increment-btn"
+                testId="increment-btn"
                 onClick={() => setCount(count + 1)}
                 label="increment"
             />
             <Button
-                data-testid="decrement-btn"
+                testId="decrement-btn"
                 onClick={() => setCount(count - 1)}
                 label="decrement"
             />
