@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Count } from "./Count";
 import { Button } from "../button/Button";
 import "./Counter.css";
+import { CounterContext } from "./CounterContext";
 
 export const Counter = () => {
-    const [count, setCount] = useState(0);
+    const { count, setCount } = useContext(CounterContext);
 
     return (
         <section data-testid="counter" className="component">
