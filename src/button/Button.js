@@ -1,7 +1,7 @@
 import React from "react";
 
-export const Button = ({ onClick, testId, label }) => (
-    <button data-testid={testId} className="btn" onClick={onClick}>
+export const Button = ({ onClick, testid, label }) => (
+    <button data-testid={testid} className="btn" onClick={onClick}>
         {label}
     </button>
 );
